@@ -1,3 +1,39 @@
-body {
+body, html {
+    height: 100%;
+    font-family:
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+footer, header, aside {
+    flex: 0 0 150px;
+}
+
+
+
+@keyframes dog {
     
+}
+
+nav {
+    flex: 1;
+    flex-direction: column;
+}
+
+main {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.986rem;
+
 }

@@ -1,32 +1,58 @@
 body, html {
     height: 100%;
-    font-family:
+    font-family:"PT sans", sans-serif;
+    color
 }
 
 .container {
     min-height: 100%;
     display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    position: sticky;
+    display: flex;
     flex-direction: row;
-    flex-flow: row;
+    justify-content: center;
+    border: black solid;
+    width: 100%;
 }
-
-footer, header, aside {
-    flex: 0 0 150px;
-}
-
-
 
 @keyframes dog {
     
 }
 
-nav {
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    flex-direction: row;
     flex: 1;
-    flex-direction: column;
+}
+
+nav a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 20px;
+    background-color: rgb(252, 194, 123);
+    border-radius: 25%;
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 main {
-    flex: 3;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -36,4 +62,24 @@ main {
 h1 {
     font-size: 2.986rem;
 
+}
+
+.img {
+    position: sticky;
+    height: 100px;
+    padding-right: 1000px;
+}
+
+.hero
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+main {
+    
 }

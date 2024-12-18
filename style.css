@@ -1,14 +1,37 @@
 body, html {
     height: 100%;
     font-family:"PT sans", sans-serif;
-    color
+    color:rgb(0, 0, 0)
 }
 
 .container {
     min-height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+}
 
+.hero {
+    background-image: url(https://www.usatoday.com/gcdn/authoring/authoring-images/2024/09/10/USAT/75160632007-smoked-brisket.jpg?crop=1440,1079,x238,y0);
+    background-position: top center;
+    animation: hockenson 5s infinite;
+    background-size: cover;
+    position: sticky;
+    height: 1500px;
+    width: 100%;
+}
+
+li a{
+    transition: 2s;
+}
+
+.sepheader {
+    opacity: 100%;
+}
+
+.sepheader:hover {
+    opacity: 100%
+    ;
 }
 
 header {
@@ -16,12 +39,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: black solid;
+    border: black double;
     width: 100%;
+    background: #E6B983;
+    background: linear-gradient(135deg, #E6B983, #DB9928);
+    opacity: 50%;
 }
 
-@keyframes dog {
-    
+header:hover {
+    opacity: 0.75;
+}
+
+@keyframes hockenson {
+    50% {background-position: right;
+    }
 }
 
 ul {
@@ -57,27 +88,27 @@ main {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+
 }
 
 h1 {
-    font-size: 2.986rem;
-
+    font-size: 4.972rem;
+    text-align: center;
 }
 
 .img {
     position: sticky;
     height: 100px;
     padding-right: 1000px;
+    opacity: 100%;
 }
 
-.hero
 
 .center {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 
 main {

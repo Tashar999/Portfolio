@@ -17,12 +17,8 @@ body, html {
     animation: hockenson 5s infinite;
     background-size: cover;
     position: sticky;
-    height: 1500px;
+    height: 1000px;
     width: 100%;
-}
-
-li a{
-    transition: 2s;
 }
 
 .sepheader {
@@ -85,10 +81,9 @@ nav {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     justify-content: center;
-
 }
 
 h1 {
@@ -96,11 +91,34 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 9.872/2.986;
+}
+
+main aside {
+    font-family: sans-serif;
+    position: relative;
+    background: lightblue;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 18px;
+    padding: 25px;
+}
+
 .img {
     position: sticky;
     height: 100px;
     padding-right: 1000px;
     opacity: 100%;
+    border-radius: 60px;
 }
 
 
@@ -111,6 +129,15 @@ h1 {
     justify-content: center;
 }
 
-main {
-    
+.catering {
+    text-align: center;
+    position: relative;
+    background: lightblue;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 18px;
+    padding: 25px;
 }

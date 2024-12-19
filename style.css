@@ -1,7 +1,8 @@
 body, html {
     height: 100%;
     font-family:"PT sans", sans-serif;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    background-color: w;
 }
 
 .container {
@@ -26,8 +27,7 @@ body, html {
 }
 
 .sepheader:hover {
-    opacity: 100%
-    ;
+    opacity: 100%;
 }
 
 header {
@@ -40,6 +40,7 @@ header {
     background: #E6B983;
     background: linear-gradient(135deg, #E6B983, #DB9928);
     opacity: 50%;
+    font-weight: bold;
 }
 
 header:hover {
@@ -51,10 +52,37 @@ header:hover {
     }
 }
 
+@keyframes smith {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes gibbs {
+     25% {
+        transform: rotate(
+     20deg);
+        left: 0px;
+     }
+     70% {
+        transform: rotate(
+     0deg);
+        left: 500px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz1v2FD9A0uAXoU5ASs3--A_W5PeBd0Ki4Q&s);
+        background-size: cover;
+    }
+     100% {
+        transform: rotate(
+     -360deg);
+        left: 0px;
+     }
+     
+  }
+
 ul {
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 150px;
     flex-direction: row;
     flex: 1;
 }
@@ -65,8 +93,8 @@ nav a:link, a:visited {
     display: inline-block;
     color: black;
     padding: 20px;
-    background-color: rgb(252, 194, 123);
     border-radius: 25%;
+    font-size: larger;
 }
 
 nav a:active {
@@ -77,6 +105,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 350px;
 }
 
 main {
@@ -97,7 +126,7 @@ h2 {
 }
 
 p {
-    font-size: 9.872/2.986;
+    font-size: 11.872/2.986;
 }
 
 main aside {
@@ -116,9 +145,10 @@ main aside {
 .img {
     position: sticky;
     height: 100px;
-    padding-right: 1000px;
+    /* padding-right: 1000px; */
     opacity: 100%;
-    border-radius: 60px;
+    border-radius: 50px;
+    animation: smith 5s infinite
 }
 
 
@@ -139,5 +169,40 @@ main aside {
     outline: none;
     overflow: hidden;
     border-radius: 18px;
-    padding: 25px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.catering img {
+    padding: 40px;
+    background-color: white
+}
+
+.catering p {
+    padding: 20px;
+    font-size: larger;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 230px;
+    justify-content: center;
+    font-weight:bolder;
+    color:darkslategrey;
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.burrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+    margin-top: 500px;
+    gap: 400px;
+    animation: gibbs 5s infinite ;
 }

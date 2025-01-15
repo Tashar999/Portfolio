@@ -3,6 +3,7 @@ body, html {
     font-family:"PT sans", sans-serif;
     color:rgb(0, 0, 0);
     background-color: w;
+    line-height: 1.6;
 }
 
 .container {

@@ -149,7 +149,8 @@ main aside {
     /* padding-right: 1000px; */
     opacity: 100%;
     border-radius: 50px;
-    animation: smith 5s infinite
+    animation: smith 5s infinite;
+    display: none;
 }
 
 
@@ -196,7 +197,6 @@ main aside {
 img {
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: none;
 }
 
 .burrito {
@@ -238,8 +238,11 @@ h4{
 
   }
 
-@media (max-width: 35rem) {
-    
+@media (max-width: 70rem) {
+    nav {
+        padding-left: 100px;
+        margin: 5px;
+    }
 
 }
 
@@ -262,10 +265,13 @@ h4{
     display: flex;
     list-style: none;
     flex-direction: column;
-    gap: 15px;
+    gap: 1px;
 }
 
 @media (max-width:40rem) {
+header {
+    padding: 10px;
+}
 .nav-desktop {
     display: none;
 }

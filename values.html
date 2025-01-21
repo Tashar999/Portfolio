@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Values</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header class="sepheader">
-        <a href="/index.html"><img class="img" src="image.png" alt="logo"></a>         <nav>
+        <a href="/index.html"><img class="img" src="image.png" alt="logo"></a>         
+        <input class="check" type="checkbox" id="hamburger-checkbox">
+        <label class="hamburger" for="hamburger-checkbox">
+            <ion-icon name="menu-outline" class="nav-icon-hamburger"></ion-icon>
+            <ion-icon name="close-outline" class="nav-icon-close"></ion-icon>
+        </label>
+        <nav class="nav-desktop">
             <ul class="link">
-                <li><a href ="/index.html">MENU</a></li>
-                <li><a href ="/catering.html">CATERING</a></li>
-                <li><a href ="/rewards.html">REWARDS</a></li>
-                <li><a href ="/values.html">OUR VALUES</a></li>
-                <li><a href ="/nutrition.html">NUTRITION</a></li>
+                <li><a href ="index.html">MENU</a></li>
+                <li><a href ="catering.html">CATERING</a></li>
+                <li><a href ="rewards.html">REWARDS</a></li>
+                <li><a href ="values.html">OUR VALUES</a></li>
+                <li><a href ="nutrition.html">NUTRITION</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <ul class="link">
+                <li><a href ="index.html">MENU</a></li>
+                <li><a href ="catering.html">CATERING</a></li>
+                <li><a href ="rewards.html">REWARDS</a></li>
+                <li><a href ="values.html">OUR VALUES</a></li>
+                <li><a href ="nutrition.html">NUTRITION</a></li>
             </ul>
         </nav>
     </header>

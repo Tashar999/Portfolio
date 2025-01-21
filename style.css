@@ -196,6 +196,7 @@ main aside {
 img {
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
 }
 
 .burrito {
@@ -206,4 +207,111 @@ img {
     margin-top: 500px;
     gap: 400px;
     animation: gibbs 5s infinite ;
+}
+
+h1{
+    font-size: 3.815rem;
+    font-size: clamp(3.815rem, 3.456rem + 1.7950000000000004vw, 5.61rem);;
+}
+    
+h2{
+    font-size: 3.052rem;
+    font-size: clamp(3.052rem, 2.8206rem + 1.1569999999999996vw, 4.209rem);
+}
+    
+h3{
+    font-size: 2.441rem;
+    font-size: clamp(2.441rem, 2.2977999999999996rem + 0.7160000000000002vw, 3.157rem);
+}
+    
+h4{
+    font-size: 1.953rem;
+    font-size: clamp(1.953rem, 1.8698000000000001rem + 0.41600000000000015vw, 2.369rem);    
+}
+
+@media (max-width: 75rem) {
+    body {padding: 10px;}
+
+  }
+
+@media (max-width: 75rem) {
+
+  }
+
+@media (max-width: 35rem) {
+    
+
+}
+
+.nav-desktop {
+    display: block;
+}
+
+.nav-desktop ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width:40rem) {
+.nav-desktop {
+    display: none;
+}
+
+.nav-mobile {
+    display: flex;
+    transform: translateX(-150%);
+    transition: transform .5s ease;
+}
+.hamburger {
+    display: flex;
+}
+.nav-icon-hamburger {
+    display: block;
+}  
+.nav-icon-close {
+    display: none;
+}
+    
+.check:checked ~ .hamburger .nav-icon-hamburger {
+        /* 1) Hide it visually */
+opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+pointer-events: none;
+    /* 3) Hide it from screen readers */
+visibility: hidden;
+    /* display: none; */
+}
+.check:checked ~ .hamburger .nav-icon-close {
+display: block;
+}   
+.check:checked ~ .nav-mobile {
+transform: translateX(0%);
+    }
+}
+
+.check {
+    position: absolute;
+    left: -100px;
+}
+
+@media (min-width: 40rem){
+.hamburger {
+    display: none;
+}
+.img {
+    display: flex;
+}
 }

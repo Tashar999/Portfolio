@@ -269,6 +269,17 @@ h4{
 }
 
 @media (max-width:40rem) {
+.row {
+    flex-direction: column;
+    gap: 1px;
+}
+.catering p {
+    padding: none;
+}
+.catering img 
+{
+    padding: 10px;
+    }
 header {
     padding: 10px;
 }
